@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BC1823"
+    tools:context=".Lembretes">
+
+    <TextView
+        android:id="@+id/lembretes"
+        android:layout_width="206dp"
+        android:layout_height="43dp"
+        android:layout_marginBottom="44dp"
+        android:text="Lembrete"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/configura"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.107"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/sino"
+        android:layout_width="194dp"
+        android:layout_height="154dp"
+        app:layout_constraintBottom_toTopOf="@id/configura"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/sino"
+        tools:layout_editor_absoluteY="3dp" />
+
+    <TextView
+        android:id="@+id/configura"
+        android:layout_width="368dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="157dp"
+        android:layout_marginEnd="168dp"
+        android:layout_marginBottom="479dp"
+        android:text="Doar sangue é sempre importante!"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        app:layout_constraintBaseline_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/home"
+        app:layout_constraintEnd_toEndOf="@id/sino"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/lembretes"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/containerdados"
+        style="@style/ContainerComponents2"
+        android:layout_width="370dp"
+        android:layout_height="198dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/home"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/configura"
+        app:layout_constraintVertical_bias="0.219">
+
+
+        <TextView
+            android:id="@+id/data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:text="Data:"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/dataOficial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintBaseline_toBaselineOf="@id/data"
+            app:layout_constraintStart_toEndOf="@id/data" />
+
+        <TextView
+            android:id="@+id/horariolembrete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Horario:"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/data"
+            app:layout_constraintTop_toBottomOf="@id/data" />
+
+        <TextView
+            android:id="@+id/horarioOficial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintBaseline_toBaselineOf="@id/horariolembrete"
+            app:layout_constraintStart_toEndOf="@id/horariolembrete" />
+
+        <TextView
+            android:id="@+id/localizacaoLembrete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Local: "
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/horariolembrete"
+            app:layout_constraintTop_toBottomOf="@id/horariolembrete" />
+
+        <TextView
+            android:id="@+id/localizacaoOficial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:textSize="18sp"
+            app:layout_constraintBaseline_toBaselineOf="@id/localizacaoLembrete"
+            app:layout_constraintStart_toEndOf="@id/localizacaoLembrete" />
+
+        <Button
+            android:id="@+id/desagendar"
+            android:layout_width="129dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="12dp"
+            android:text="Desagendar doação"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/localizacaoLembrete" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/maps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Abrir local no mapa"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/containerdados" />
+
+    <ImageView
+        android:id="@+id/home"
+        android:layout_width="57dp"
+        android:layout_height="52dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/informacoes"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_home"
+        tools:layout_editor_absoluteY="663dp" />
+
+    <ImageView
+        android:id="@+id/informacoes"
+        android:layout_width="56dp"
+        android:layout_height="55dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/conquista"
+        app:layout_constraintStart_toEndOf="@+id/home"
+        app:srcCompat="@drawable/ic_info"
+        tools:layout_editor_absoluteY="664dp" />
+
+    <ImageView
+        android:id="@+id/conquista"
+        android:layout_width="58dp"
+        android:layout_height="55dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/agendamento"
+        app:layout_constraintStart_toEndOf="@+id/informacoes"
+        app:srcCompat="@drawable/ic_trofeu"
+        tools:layout_editor_absoluteY="663dp" />
+
+    <ImageView
+        android:id="@+id/agendamento"
+        android:layout_width="57dp"
+        android:layout_height="58dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/lembrete"
+        app:layout_constraintStart_toEndOf="@+id/conquista"
+        app:srcCompat="@drawable/ic_agendamento"
+        tools:layout_editor_absoluteY="662dp" />
+
+    <ImageView
+        android:id="@+id/lembrete"
+        android:layout_width="53dp"
+        android:layout_height="54dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintStart_toEndOf="@+id/agendamento"
+        app:srcCompat="@drawable/ic_lembrete"
+        tools:layout_editor_absoluteY="664dp"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
