@@ -137,14 +137,12 @@ public class Cadastro extends AppCompatActivity {
     }
 
     private void pegarDados() {
-
         edit_nome = findViewById(R.id.editTextNome);
         edit_email = findViewById(R.id.Email);
         edit_cpf = findViewById(R.id.CPF);
         edit_senha = findViewById(R.id.edit_Senha);
         btn_cadastrar = findViewById(R.id.ButaoCadastro);
         spinnerTipoSanguineo = findViewById(R.id.spinnerTipoSanguineo);
-
 
         String[] tiposSangue = {"A+", "A-", "B+", "B-", "AB+", "AB-", "O+", "O-"};
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, tiposSangue);

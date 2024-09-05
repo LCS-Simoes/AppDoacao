@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".TelaPrincipal">
+
+
+
+        <View
+            android:id="@+id/ContainerName"
+            style="@style/ContainerName"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintTop_toBottomOf="@id/ContainerName"
+            app:layout_constraintBottom_toTopOf="@id/CartaoDoador"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <ImageView
+            android:id="@+id/perfil"
+            android:layout_width="62dp"
+            android:layout_height="49dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="@id/ContainerName"
+            app:layout_constraintTop_toTopOf="@id/ContainerName"
+            app:srcCompat="@drawable/profile"
+            android:contentDescription="@string/icon_perfil"/>
+
+        <View
+            android:id="@+id/CartaoDoador"
+            style="@style/CartaoDoador"
+            android:layout_width="0dp"
+            android:layout_marginBottom="4dp"
+            app:layout_constraintBottom_toTopOf="@id/home"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <View
+            android:id="@+id/ContainerDoador"
+            style="@style/ContainerName"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="49dp"
+            android:layout_marginBottom="48dp"
+            android:background="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/nomeCartao" />
+
+        <TextView
+            android:id="@+id/nomeUsuario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/sem_login"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toEndOf="@id/perfil"
+            app:layout_constraintTop_toTopOf="@id/ContainerName" />
+
+        <TextView
+            android:id="@+id/stringCPF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginEnd="315dp"
+            android:layout_marginBottom="630dp"
+            android:text="@string/cpf"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toEndOf="@id/perfil"
+            app:layout_constraintTop_toTopOf="@id/ContainerName" />
+
+        <ImageView
+            android:id="@+id/deslogar"
+            android:layout_width="33dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="@id/ContainerName"
+            app:layout_constraintTop_toTopOf="@id/ContainerName"
+            app:srcCompat="@drawable/ic_deslogar"
+            android:contentDescription="@string/icon_deslogar"
+            />
+
+        <ImageView
+            android:id="@+id/home"
+            android:layout_width="57dp"
+            android:layout_height="52dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/informacoes"
+            app:layout_constraintHorizontal_bias="0.05"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/ic_home"
+            tools:layout_editor_absoluteY="663dp"
+            android:contentDescription="@string/icon_home"
+            />
+
+        <ImageView
+            android:id="@+id/informacoes"
+            android:layout_width="56dp"
+            android:layout_height="55dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/conquista"
+            app:layout_constraintStart_toEndOf="@+id/home"
+            app:srcCompat="@drawable/ic_info"
+            tools:layout_editor_absoluteY="664dp"
+            android:contentDescription="@string/icon_info"
+            />
+
+        <ImageView
+            android:id="@+id/conquista"
+            android:layout_width="58dp"
+            android:layout_height="55dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/agendamento"
+            app:layout_constraintStart_toEndOf="@+id/informacoes"
+            app:srcCompat="@drawable/ic_trofeu"
+            tools:layout_editor_absoluteY="663dp"
+            android:contentDescription="@string/icon_conquista"
+            />
+
+        <ImageView
+            android:id="@+id/agendamento"
+            android:layout_width="57dp"
+            android:layout_height="58dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/lembrete"
+            app:layout_constraintStart_toEndOf="@+id/conquista"
+            app:srcCompat="@drawable/ic_agendamento"
+            tools:layout_editor_absoluteY="662dp"
+            android:contentDescription="@string/icon_agendamento"
+            />
+
+        <ImageView
+            android:id="@+id/lembrete"
+            android:layout_width="53dp"
+            android:layout_height="54dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.95"
+            app:layout_constraintStart_toEndOf="@+id/agendamento"
+            app:srcCompat="@drawable/ic_lembrete"
+            tools:layout_editor_absoluteY="664dp"
+            android:contentDescription="@string/icon_lembrete"
+            />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_end="7dp" />
+
+        <TextView
+            android:id="@+id/frase"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="serif"
+            android:text="@string/cartao"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toBottomOf="@+id/ContainerDoador"
+            app:layout_constraintStart_toStartOf="@+id/datacartao" />
+
+        <TextView
+            android:id="@+id/nomeCartao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="301dp"
+            android:text="@string/nome"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/perfilCard"
+            app:layout_constraintTop_toTopOf="@+id/CartaoDoador" />
+
+        <TextView
+            android:id="@+id/cpfdecoracao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="@string/cpf"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@id/Doador"
+            app:layout_constraintTop_toBottomOf="@id/datacartao" />
+
+
+        <TextView
+            android:id="@+id/tipo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="68dp"
+            android:layout_marginTop="40dp"
+            android:text="@string/tipo_sangue"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            app:layout_constraintStart_toEndOf="@+id/cpfCartao"
+            app:layout_constraintTop_toBottomOf="@+id/datacartao" />
+
+        <ImageView
+            android:id="@+id/perfilCard"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="9dp"
+            app:layout_constraintBottom_toTopOf="@+id/ContainerDoador"
+            app:layout_constraintEnd_toStartOf="@+id/nomeCartao"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/CartaoDoador"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/profile"
+            android:contentDescription="@string/icon_perfil_card"/>
+
+        <TextView
+            android:id="@+id/datacartao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="29dp"
+            android:text="@string/data"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toEndOf="@+id/Doador"
+            app:layout_constraintTop_toBottomOf="@+id/ContainerDoador" />
+
+        <TextView
+            android:id="@+id/sangue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:text="@string/sanguineo"
+            android:textColor="@color/white"
+            app:layout_constraintBaseline_toBaselineOf="@+id/tipo"
+            app:layout_constraintStart_toEndOf="@+id/tipo" />
+
+        <TextView
+            android:id="@+id/Doador"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/doador_desde"
+            android:textColor="@color/black"
+            app:layout_constraintBaseline_toBaselineOf="@+id/datacartao"
+            app:layout_constraintStart_toStartOf="@+id/perfilCard" />
+
+        <TextView
+            android:id="@+id/cpfCartao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:text="@string/cpf_usuario"
+            android:textColor="@color/white"
+            app:layout_constraintBaseline_toBaselineOf="@+id/tipo"
+            app:layout_constraintStart_toEndOf="@+id/cpfdecoracao"
+            tools:layout_editor_absoluteY="598dp" />
+
+        <TextView
+            android:id="@+id/Usuario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="@string/usuario"
+            android:textColor="@color/white"
+            app:layout_constraintBaseline_toBaselineOf="@+id/nomeCartao"
+            app:layout_constraintStart_toStartOf="@+id/frase" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
