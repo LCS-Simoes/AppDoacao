@@ -22,6 +22,9 @@
             android:name=".Agendamentos"
             android:exported="false" />
         <activity
+            android:name=".Informacoes"
+            android:exported="false" />
+        <activity
             android:name=".TelaPrincipal"
             android:exported="false" />
         <activity
