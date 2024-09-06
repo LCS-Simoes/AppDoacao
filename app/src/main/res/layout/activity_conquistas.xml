@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Conquistas">
+
+
+    <View
+        android:id="@+id/ContainerName"
+        style="@style/ContainerName"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/perfil"
+        android:layout_width="62dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="@id/ContainerName"
+        app:layout_constraintTop_toTopOf="@id/ContainerName"
+        app:srcCompat="@drawable/profile"
+        android:contentDescription="@string/icon_perfil"/>
+
+    <TextView
+        android:id="@+id/nomeUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/sem_login"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@id/perfil"
+        app:layout_constraintTop_toTopOf="@id/ContainerName" />
+
+    <ImageView
+        android:id="@+id/home"
+        android:layout_width="57dp"
+        android:layout_height="52dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/informacoes"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_home"
+        tools:layout_editor_absoluteY="663dp"
+        android:contentDescription="@string/icon_home"/>
+
+    <ImageView
+        android:id="@+id/informacoes"
+        android:layout_width="56dp"
+        android:layout_height="55dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/conquista"
+        app:layout_constraintStart_toEndOf="@+id/home"
+        app:srcCompat="@drawable/ic_info"
+        tools:layout_editor_absoluteY="664dp"
+        android:contentDescription="@string/icon_info"/>
+
+    <ImageView
+        android:id="@+id/conquista"
+        android:layout_width="58dp"
+        android:layout_height="55dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/agendamento"
+        app:layout_constraintStart_toEndOf="@+id/informacoes"
+        app:srcCompat="@drawable/ic_trofeu"
+        tools:layout_editor_absoluteY="663dp"
+        android:contentDescription="@string/icon_conquista"/>
+
+    <ImageView
+        android:id="@+id/agendamento"
+        android:layout_width="57dp"
+        android:layout_height="58dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/lembrete"
+        app:layout_constraintStart_toEndOf="@+id/conquista"
+        app:srcCompat="@drawable/ic_agendamento"
+        tools:layout_editor_absoluteY="662dp"
+        android:contentDescription="@string/icon_agendamento"/>
+
+    <ImageView
+        android:id="@+id/lembrete"
+        android:layout_width="53dp"
+        android:layout_height="54dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintStart_toEndOf="@+id/agendamento"
+        app:srcCompat="@drawable/ic_lembrete"
+        tools:layout_editor_absoluteY="664dp"
+        android:contentDescription="@string/icon_lembrete"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="7dp" />
+
+    <TextView
+        android:id="@+id/stringCPF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/cpf"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@id/perfil"
+        app:layout_constraintTop_toTopOf="@id/ContainerName" />
+
+    <ImageView
+        android:id="@+id/deslogar"
+        android:layout_width="33dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="@id/ContainerName"
+        app:layout_constraintTop_toTopOf="@id/ContainerName"
+        app:srcCompat="@drawable/ic_deslogar"
+        android:contentDescription="@string/icon_deslogar"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/verrecompensas"
+        style="@style/Button2"
+        android:layout_width="302dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="140dp"
+        android:text="@string/ver_recompensas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.605"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Pontuacao" />
+
+    <View
+        android:id="@+id/ContainerDestaque"
+        style="@style/ContainerDestaque"
+        android:layout_width="153dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="264dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.015"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/verrecompensas" />
+
+    <TextView
+        android:id="@+id/nomeDestaque"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="@string/destaques"
+        android:textColor="@color/white"
+        app:constraintSet="@id/perfil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.191"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/verrecompensas" />
+
+    <TextView
+        android:id="@+id/Pontuacao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:text="@string/pontuacao"
+        android:textColor="@color/black"
+        android:textSize="50sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.06"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/perfil" />
+
+    <TextView
+        android:id="@+id/Pontos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pontos"
+        android:textColor="@color/black"
+        android:textSize="38sp"
+        app:layout_constraintBaseline_toBaselineOf="@id/Pontuacao"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.271"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        android:id="@+id/teste"
+        style="@style/Edit_Points"
+        android:layout_width="145dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="@id/Pontuacao"
+        app:layout_constraintEnd_toStartOf="@id/deslogar"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@id/Pontuacao"
+        app:layout_constraintTop_toTopOf="@id/Pontuacao"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/doação"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/doacao"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toBottomOf="@id/teste"
+        app:layout_constraintEnd_toEndOf="@id/teste"
+        app:layout_constraintStart_toStartOf="@id/teste"
+        app:layout_constraintTop_toTopOf="@id/teste"
+        app:srcCompat="@drawable/profile" />
+
+    <ViewFlipper
+        android:layout_width="412dp"
+        android:layout_height="160dp"
+        android:layout_marginBottom="48dp"
+        android:autoStart="true"
+        android:flipInterval="2000"
+        android:inAnimation="@android:anim/slide_in_left"
+        android:outAnimation="@android:anim/slide_out_right"
+        app:layout_constraintBottom_toTopOf="@id/conquista"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.939"
+        app:layout_constraintStart_toEndOf="@id/ContainerDestaque"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="396dp"
+            android:layout_height="163dp"
+            app:srcCompat="@drawable/imagevoew3"
+            android:contentDescription="@string/imagem_produtos"
+
+            />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/imageview5"
+            android:contentDescription="@string/imagem_produtos"
+            />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/imageview2"
+            android:contentDescription="@string/imagem_produtos"
+            />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/imagemview"
+            android:contentDescription="@string/imagem_produtos"
+            />
+    </ViewFlipper>
+
+    <ProgressBar
+        android:id="@+id/barra"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="392dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Pontuacao" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
