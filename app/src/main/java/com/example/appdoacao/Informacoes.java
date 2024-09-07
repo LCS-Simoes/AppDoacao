@@ -5,6 +5,7 @@ import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
+import android.net.Uri;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.Button;
@@ -58,6 +59,16 @@ public class Informacoes extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        btSaber.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String url = "https://www.prosangue.sp.gov.br/artigos/requisitos_basicos_para_doacao.html";
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
+                startActivity(intent);
+            }
+        });
+
     }
     private void botoes(){
         btHome = findViewById(R.id.home);

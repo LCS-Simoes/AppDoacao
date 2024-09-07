@@ -64,13 +64,13 @@ public class Agendamentos extends AppCompatActivity {
     }
 
     private class Agendamento {
-        private String userId;
-        private String nomeUsuario;
-        private String cpf;
-        private String tipoSanguineo;
-        private String data;
-        private String horario;
-        private String local;
+        public String userId;
+        public String nomeUsuario;
+        public String cpf;
+        public String tipoSanguineo;
+        public String data;
+        public String horario;
+        public String local;
 
         public Agendamento() {
             // Construtor vazio
