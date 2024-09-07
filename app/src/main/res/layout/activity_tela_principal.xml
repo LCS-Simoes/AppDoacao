@@ -230,7 +230,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/CartaoDoador"
             app:layout_constraintVertical_bias="0.0"
-            app:srcCompat="@drawable/profile"
+            app:srcCompat="@drawable/logo"
             android:contentDescription="@string/icon_perfil_card"/>
 
         <TextView
@@ -282,7 +282,9 @@
             android:text="@string/usuario"
             android:textColor="@color/white"
             app:layout_constraintBaseline_toBaselineOf="@+id/nomeCartao"
-            app:layout_constraintStart_toStartOf="@+id/frase" />
+            app:layout_constraintStart_toEndOf="@+id/nomeCartao"
+
+            />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.core.widget.NestedScrollView>
