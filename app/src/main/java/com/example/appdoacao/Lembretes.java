@@ -194,6 +194,9 @@ public class Lembretes extends AppCompatActivity {
                                     Toast.makeText(Lembretes.this,"Agendamento cancelado com sucesso", Toast.LENGTH_SHORT).show();
                                     limparDados();
                                     findViewById(R.id.containerdados).setVisibility(View.GONE);
+
+                                    //Correção botão não do mapa não sumia após desagendamento
+                                    atualizarDadosUsuarios(usuarioID);
                                 })
                                 .addOnFailureListener(e -> Log.d(TAG, "Erro ao deletar o agendamento", e));
                     } else {
