@@ -22,11 +22,11 @@ O **App Doação de Sangue** é um aplicativo mobile projetado para facilitar e 
 ## Imagens do App
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/026e4993-cf48-4513-8afa-e29b42cd66b1" width="200"/>
   <img src="https://github.com/user-attachments/assets/eea2b836-4f86-4f83-a8d0-a167adca1978" width="200"/>
-  <img src="https://github.com/user-attachments/assets/82bfe6b4-ac36-4ad4-b988-d87c4670000f" width="200"/>
-  <img src="https://github.com/user-attachments/assets/33fb99fb-ee54-455e-b6a5-60c068e64d65" width="190"/>
-  <img src="https://github.com/user-attachments/assets/b8bb99ba-6d65-4ac5-8c34-2400667e94c0  width="200"/>
+  <img src="https://github.com/user-attachments/assets/82bfe6b4-ac36-4ad4-b988-d87c4670000f" width="199"/>
+  <img src="https://github.com/user-attachments/assets/33fb99fb-ee54-455e-b6a5-60c068e64d65" width="194"/>
+  <img src="https://github.com/user-attachments/assets/b8bb99ba-6d65-4ac5-8c34-2400667e94c0" width="200"/>
+  <img src="https://github.com/user-attachments/assets/367d7ec9-dc43-4070-8232-baeb9a50cdae" width="200"/>
 </p>
 
 ## Como Executar o Projeto
