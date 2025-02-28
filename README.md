@@ -19,6 +19,9 @@ O **App Doação de Sangue** é um aplicativo mobile projetado para facilitar e 
 - **Cartão do Doador** (*em desenvolvimento*): Funcionalidade para o usuário armazenar seu histórico de doações.
 - **Clube Doador** (*em desenvolvimento*): Um sistema de pontuação para parcerias com prefeituras ou instituições, permitindo que doadores resgatem recompensas na "loja" do app.
 
+##Imagens do App
+![Image](https://github.com/user-attachments/assets/eea2b836-4f86-4f83-a8d0-a167adca1978)
+
 ## Como Executar o Projeto
 1. Clone este repositório:
    ```bash
