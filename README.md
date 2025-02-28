@@ -19,11 +19,14 @@ O **App Doação de Sangue** é um aplicativo mobile projetado para facilitar e 
 - **Cartão do Doador** (*em desenvolvimento*): Funcionalidade para o usuário armazenar seu histórico de doações.
 - **Clube Doador** (*em desenvolvimento*): Um sistema de pontuação para parcerias com prefeituras ou instituições, permitindo que doadores resgatem recompensas na "loja" do app.
 
-##Imagens do App
-- ![Inicial](https://github.com/user-attachments/assets/026e4993-cf48-4513-8afa-e29b42cd66b1)
-- ![Login](https://github.com/user-attachments/assets/eea2b836-4f86-4f83-a8d0-a167adca1978)
-- ![Troca Senha](https://github.com/user-attachments/assets/82bfe6b4-ac36-4ad4-b988-d87c4670000f)
-- ![Cadastro](https://github.com/user-attachments/assets/33fb99fb-ee54-455e-b6a5-60c068e64d65)
+## Imagens do App
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/026e4993-cf48-4513-8afa-e29b42cd66b1" width="200"/>
+  <img src="https://github.com/user-attachments/assets/eea2b836-4f86-4f83-a8d0-a167adca1978" width="200"/>
+  <img src="https://github.com/user-attachments/assets/82bfe6b4-ac36-4ad4-b988-d87c4670000f" width="200"/>
+  <img src="https://github.com/user-attachments/assets/33fb99fb-ee54-455e-b6a5-60c068e64d65" width="200"/>
+</p>
 
 ## Como Executar o Projeto
 1. Clone este repositório:
