@@ -1,7 +1,7 @@
 # App Doação de Sangue - Garra da Vida (Desenvolvimento)
 
 ## Descrição
-O **App Doação de Sangue** é um aplicativo mobile projetado para facilitar e incentivar a doação de sangue. Ele permite que os usuários realizem agendamentos, recebam lembretes e informações sobre doação de sangue, e tenham acesso a um cartão digital de doador.
+O **Garra da Vida** é um aplicativo mobile projetado para facilitar e incentivar a doação de sangue. Ele permite que os usuários realizem agendamentos, recebam lembretes e informações sobre doação de sangue, e tenham acesso a um cartão digital de doador.
 
 ## Tecnologias Utilizadas
 - **Linguagem:** Java + XML
